@@ -1,0 +1,74 @@
+/* Write your code here. */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+.bg-conatiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.heading {
+  color: #0f172a;
+  font-family: "Roboto";
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 48px;
+}
+@media screen and (min-width: 768px) {
+  .heading {
+    font-size: 48px;
+  }
+}
+.notification-list-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 500px;
+}
+@media screen and (min-width: 768px) {
+  .notification-list-container {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .notification-container {
+    margin-bottom: 48px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    padding-right: 16px;
+  }
+}
+.notification-container {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  margin-bottom: 32px;
+  padding-top: 11px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  padding-right: 18px;
+}
+.Primary {
+  background-color: #0b69ff;
+}
+.Success {
+  background-color: #2dca73;
+}
+.Warning {
+  background-color: #ffb800;
+}
+.Danger {
+  background-color: #ff0b37;
+}
+.message {
+  color: white;
+  margin-left: 15px;
+  font-family: "Roboto";
+}
